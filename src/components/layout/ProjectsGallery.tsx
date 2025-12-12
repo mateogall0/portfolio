@@ -17,9 +17,9 @@ const techIcons: Record<string, any> = {
 export default function ProjectsGallery() {
   return (
     <section id="projects" className="max-w-5xl mx-auto px-4 py-16">
-      <h2 className="text-3xl md:text-2xl font-bold mb-8 text-center">
+      <h3 className="text-2xl md:text-2xl font-bold mb-8 text-center">
         Open Source Projects
-      </h2>
+      </h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-stretch">
         {projects.map((project) => (

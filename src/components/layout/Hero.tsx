@@ -21,6 +21,9 @@ export default function Hero() {
         <h1 className="md:text-3xl font-bold mb-4">
           Hi, I'm Mateo Gallo
         </h1>
+        <h2 className="md:text-1xl font-bold mb-4">
+          Software Developer
+        </h2>
         <p className="text-lg md:text-1xl text-gray-300 mb-6">
           I design and build web applications, developer tools, and open-source projects.
         </p>
