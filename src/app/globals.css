@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --aqua: #a5f3fc;
+  --salmon: #fa8072;
 }
 
 @theme inline {
@@ -20,6 +21,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -27,19 +32,23 @@ body {
 }
 
 a {
-  @apply transition-transform transform hover:scale-105 hover:shadow-xl hover:border-white;
+  @apply transition-transform transform hover:scale-105 hover:border-white;
 }
 
 a:hover {
-  animation: borderPulse 0.3s ease forwards;
+  animation: borderPulse 0.2s ease forwards;
 }
 
 @keyframes borderPulse {
   0% {
-    border-color: transparent;
-    color: transparent;
+    border-color: var(--foreground);
+    color: var(--foreground);
   }
-  50% {
+  25% {
+    border-color: var(--salmon);
+    color: var(--salmon);
+  }
+  75% {
     border-color: var(--aqua);
     color: var(--aqua);
   }
@@ -47,4 +56,63 @@ a:hover {
     border-color: var(--foreground);
     color: var(--foreground);
   }
+}
+
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  filter: blur(150px);
+}
+
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+.blob-1 { background: #ff7aa2; }
+.blob-2 { background: #7ab8ff; }
+.blob-3 { background: #ffd87a; }
+.blob-4 { background: #9d7aff; }
+.blob-5 { background: #7affc8; }
+
+.blob-1 { animation: move1 65s infinite alternate ease-in-out; }
+.blob-2 { animation: move2 65s infinite alternate ease-in-out; }
+.blob-3 { animation: move3 80s infinite alternate ease-in-out; }
+.blob-4 { animation: move4 70s infinite alternate ease-in-out; }
+.blob-5 { animation: move5 60s infinite alternate ease-in-out; }
+
+@keyframes move1 {
+  0% { transform: translate(10vw, 10vh); }
+  100% { transform: translate(60vw, 50vh); }
+}
+
+@keyframes move2 {
+  0% { transform: translate(70vw, 20vh); }
+  100% { transform: translate(20vw, 70vh); }
+}
+
+@keyframes move3 {
+  0% { transform: translate(30vw, 80vh); }
+  100% { transform: translate(-10vw, 20vh); }
+}
+
+@keyframes move4 {
+  0% { transform: translate(50vw, -10vh); }
+  100% { transform: translate(80vw, 60vh); }
+}
+
+@keyframes move5 {
+  0% { transform: translate(-20vw, 40vh); }
+  100% { transform: translate(40vw, -10vh); }
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-[var(--background)]/10;
 }

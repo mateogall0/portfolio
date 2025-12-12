@@ -24,7 +24,7 @@ export const projects = [
     name: "JSgeist client",
     description: "Zeitgeist client for JavaScript in C++",
     url: "https://github.com/mateogall0/jsgeist_client",
-    tech: ["C++", "Python"],
+    tech: ["C++", "Node"],
   },
 
   {
