@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -14,26 +13,24 @@ export default function Navbar() {
 
   return (
     <header className="w-full flex justify-center">
-      <nav className="w-full max-w-5xl border rounded-b-xl backdrop-blur supports-[backdrop-filter]:bg-black p-4">
-        {/* Logo / Name */}
-        <Link href="/" className="text-lg font-semibold tracking-tight">
-          Mateo Gallo
-        </Link>
+      <nav className="w-full max-w-5xl border rounded-b-xl backdrop-blur supports-[backdrop-filter]:bg-black p-4 flex items-center justify-between overflow-visible">
+        {/* Logo */}
+        <div className="text-lg font-semibold">Mateo Gallo</div>
 
         {/* Desktop links */}
-        <ul className="hidden gap-6 md:flex float-right">
+        <ul className="hidden md:flex gap-6">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="text-sm hover:text-neutral-700">
+              <a href={item.href} className="inline-block">
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
 
-        {/* Mobile menu toggle */}
+        {/* Mobile toggle */}
         <button
-          className="md:hidden float-right"
+          className="md:hidden"
           onClick={() => setOpen((x) => !x)}
           aria-label="Toggle navigation menu"
         >
@@ -43,26 +40,26 @@ export default function Navbar() {
             <span className="block h-0.5 w-6 bg-black" />
           </div>
         </button>
-
-        {/* Mobile menu */}
-        {open && (
-          <div className="border-t p-4 md:hidden mt-2 rounded-b-xl">
-            <ul className="flex flex-col gap-4 text-lg">
-              {navItems.map((item) => (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="block"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </nav>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="w-full max-w-5xl border-x border-b p-4 md:hidden rounded-b-xl mt-[-1px]">
+          <ul className="flex flex-col gap-4 text-lg">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="block link"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </header>
   );
 }

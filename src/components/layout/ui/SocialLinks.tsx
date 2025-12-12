@@ -11,7 +11,7 @@ export default function SocialLinks() {
             href={social.href}
             target={social.href.startsWith("http") ? "_blank" : undefined}
             rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="flex items-center gap-3 hover:text-gray-300 transition"
+            className="flex items-center gap-3"
           >
             <Icon className="text-2xl" />
             <span className="text-lg">{social.label}</span>
