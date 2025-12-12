@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] px-4 md:px-16 gap-8"
+      className="flex flex-col md:flex-row items-center justify-center min-h-[50dvh] px-4 md:px-16 gap-8"
     >
       {/* Left: Image */}
       <div className="flex-shrink-0">

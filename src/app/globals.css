@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --aqua: #a5f3fc;
 }
 
 @theme inline {
@@ -27,4 +28,23 @@ body {
 
 a {
   @apply transition-transform transform hover:scale-105 hover:shadow-xl hover:border-white;
+}
+
+a:hover {
+  animation: borderPulse 0.3s ease forwards;
+}
+
+@keyframes borderPulse {
+  0% {
+    border-color: transparent;
+    color: transparent;
+  }
+  50% {
+    border-color: var(--aqua);
+    color: var(--aqua);
+  }
+  100% {
+    border-color: var(--foreground);
+    color: var(--foreground);
+  }
 }
