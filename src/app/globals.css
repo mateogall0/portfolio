@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  animation: borderPulse 0.2s ease forwards;
+  animation: borderPulse 0.5s ease forwards;
 }
 
 @keyframes borderPulse {
@@ -48,7 +48,7 @@ a:hover {
     border-color: var(--salmon);
     color: var(--salmon);
   }
-  75% {
+  50% {
     border-color: var(--aqua);
     color: var(--aqua);
   }
