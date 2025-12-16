@@ -1,10 +1,10 @@
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/layout/Hero";
+import Hero from "@/components/sections/Hero";
 import Footer from "@/components/layout/Footer";
-import ProjectsGallery from "@/components/layout/ProjectsGallery";
+import ProjectsGallery from "@/components/sections/ProjectsGallery";
 import Background from "@/components/layout/Background";
-import Experience from "@/components/layout/Experience";
-import Contact from "@/components/layout/Contact";
+import Experience from "@/components/sections/Experience";
+import Contact from "@/components/sections/Contact";
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
