@@ -5,6 +5,7 @@ export default function ContactForm() {
       method="POST"
       className="w-full max-w-xl flex flex-col gap-4"
     >
+
       <input
         type="email"
         name="email"
@@ -25,7 +26,7 @@ export default function ContactForm() {
         type="submit"
         className="rounded-lg bg-black px-4 py-2 text-white border border-gray-700"
       >
-        Send message
+        Send
       </button>
     </form>
   );
