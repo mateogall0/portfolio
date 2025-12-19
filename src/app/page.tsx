@@ -7,19 +7,16 @@ import Experience from "@/components/sections/Experience";
 import Contact from "@/components/sections/Contact";
 
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Page({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        <Background/>
-        <Hero/>
-        <ProjectsGallery/>
-        <Experience/>
-        <Contact/>
-        <Footer/>
-        {children}
-      </body>
-    </html>
+    <>
+      <Navbar />
+      <Background/>
+      <Hero/>
+      <ProjectsGallery/>
+      <Experience/>
+      <Contact/>
+      <Footer/>
+    </>
   );
 }
