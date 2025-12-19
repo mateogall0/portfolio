@@ -1,12 +1,12 @@
 import { MdEmail } from "react-icons/md";
 import { FiDownload } from "react-icons/fi";
-
+import ContactForm from "@/components/ui/ContactForm"
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="glass w-full min-h-[400px] p-5 px-4 md:px-16 flex flex-col items-center gap-8 border-t-1 border-white/20"
+      className="glass w-full min-h-[500px] p-5 px-4 md:px-16 flex flex-col items-center gap-8 border-t-1 border-white/20"
     >
       <h3 className="text-2xl md:text-2xl font-bold text-center">
         Get in touch with me
@@ -25,6 +25,7 @@ export default function Contact() {
           <MdEmail/>Send me an email
         </a>
       </div>
+      <ContactForm/>
     </section>
   );
 }
