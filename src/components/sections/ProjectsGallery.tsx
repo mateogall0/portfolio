@@ -1,7 +1,7 @@
 "use client";
 
 import { projects } from "@/data/projects";
-import { SiC, SiPython, SiCplusplus, SiLinux, SiTensorflow, SiNodeJs, SiNodedotjs } from "react-icons/si";
+import { SiC, SiPython, SiCplusplus, SiLinux, SiTensorflow, SiNodedotjs } from "react-icons/si";
 
 
 const techIcons: Record<string, any> = {
@@ -30,13 +30,6 @@ export default function ProjectsGallery() {
             rel="noopener noreferrer"
             className="group border border-gray-700 rounded-lg overflow-hidden p-4 hover:shadow-lg hover:bg-black transition flex flex-col h-50"
           >
-            {project.image && (
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-40 object-cover rounded-md mb-4"
-              />
-            )}
             <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition">
               {project.name}
             </h3>
