@@ -6,9 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col items-center justify-center
-             min-h-[50dvh]
-             pt-16 gap-12"
+      className="flex flex-col items-center justify-center min-h-[50dvh] pt-16 gap-12"
     >
       {/* Top: Image + Text */}
       <div className="flex flex-col md:flex-row items-center gap-8">
