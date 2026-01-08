@@ -14,7 +14,11 @@ export default function Experience() {
         <ul className="space-y-10">
           {experience.map((item) => (
             <li key={item.id} className="relative pl-12">
-              <span className="absolute left-[10px] top-1.5 h-3 w-3 rounded-full glass border-1 border-white/20" />
+              <span
+                className={`absolute left-[10px] top-1.5 h-3 w-3 rounded-full glass border border-1
+                  ${item.type === 0 ? "border-white/20" : "border-blue-600"}
+                `}
+              />
 
               <div>
                 <h3 className="text-lg font-medium">
@@ -22,7 +26,7 @@ export default function Experience() {
                 </h3>
 
                 <p className="text-sm text-gray-300 mb-1">
-                  {item.type}
+                  {item.type == 1 ? "Worker": "Student"}
                 </p>
 
                 <p className="text-sm text-gray-200 mb-1">

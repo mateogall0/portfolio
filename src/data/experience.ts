@@ -5,7 +5,7 @@ export type Experience = {
   start: string;
   end: string;
   description: string;
-  type: string;
+  type: number;
 };
 
 export const experience: Experience[] = [
@@ -16,17 +16,19 @@ export const experience: Experience[] = [
     start: "2023",
     end: "Present",
     description: "Designed, developed, deployed, and maintained backend services.",
-    type: "Worker",
+    type: 1,
   },
+
   {
     id: "2",
     role: "Developer",
     company: "Freelance",
-    start: "2021",
-    end: "2023",
+    start: "2023",
+    end: "2025",
     description: "Built small web apps and APIs for clients.",
-    type: "Worker",
+    type: 1,
   },
+
   {
     id: "3",
     role: "Machine Learning Engineering",
@@ -34,7 +36,27 @@ export const experience: Experience[] = [
     start: "2023",
     end: "2024",
     description: "Specialized in deep AI techniques.",
-    type: "Student",
+    type: 0,
+  },
+
+  {
+    id: "4",
+    role: "Software development",
+    company: "Holberton School",
+    start: "2022",
+    end: "2023",
+    description: "Learned the foundamentals of Software Engineering.",
+    type: 0,
+  },
+
+  {
+    id: "5",
+    role: "Software development",
+    company: "UTU",
+    start: "2019",
+    end: "2021",
+    description: "Learned the foundamentals of Software Engineering.",
+    type: 0,
   },
 
 ];
