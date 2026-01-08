@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 w-full flex justify-center">
+    <header className="z-1 sticky top-0 w-full flex justify-center">
       <nav className="glass w-full max-w-5xl rounded-b-3xl p-4 flex items-center justify-between border border-white/20 border-t-0">
         {/* Logo */}
         <div className="text-lg font-semibold">Mateo Gallo</div>
