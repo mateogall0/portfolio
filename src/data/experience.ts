@@ -45,17 +45,17 @@ export const experience: Experience[] = [
     company: "Holberton School",
     start: "2022",
     end: "2023",
-    description: "Learned the foundamentals of Software Engineering.",
+    description: "Learned the fundamentals of Software Engineering.",
     type: 0,
   },
 
   {
     id: "5",
-    role: "Software development",
+    role: "Information Technology",
     company: "UTU",
     start: "2019",
     end: "2021",
-    description: "Learned the foundamentals of Software Engineering.",
+    description: "Studied the fundamentals of software, hardware, and electronics systems.",
     type: 0,
   },
 

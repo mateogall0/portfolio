@@ -8,8 +8,11 @@ export default function Experience() {
       <h2 className="text-2xl font-semibold mb-10">Experience</h2>
 
       <div className="relative">
-        <div className="absolute left-4 top-0 h-10 w-px border-l border-dashed border-gray-300" />
-        <div className="absolute left-4 top-10 bottom-0 w-px bg-gray-300" />
+        {/* Solid line goes full height */}
+        <div className="absolute left-4 top-1 bottom-0 w-px bg-gray-300" />
+
+        {/* Dashed segment starts BELOW the top dot */}
+        <div className="absolute left-4 -top-7 h-10 w-px border-l border-dashed border-gray-300" />
 
         <ul className="space-y-10">
           {experience.map((item) => (
