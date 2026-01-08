@@ -1,11 +1,11 @@
 import {
-  FaGithub,
   FaLinux,
   FaWindows,
   FaApple,
 } from "react-icons/fa";
 
 import {
+  SiGit,
   SiC,
   SiCplusplus,
   SiPython,
@@ -33,7 +33,7 @@ import {
 
 export const skills = [
   // Version control
-  { icon: FaGithub, label: "GitHub", href: "https://github.com" },
+  { icon: SiGit, label: "Git", href: "https://git-scm.com" },
 
   // Languages
   { icon: SiC, label: "C", href: "https://en.wikipedia.org/wiki/C_(programming_language)" },
