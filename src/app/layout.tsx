@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Background from "@/components/layout/Background";
+import Footer from "@/components/layout/Footer";
 
 
 export const metadata ={
@@ -64,7 +67,10 @@ export default function RootLayout({
           }}
         />
 
+        <Navbar />
+        <Background/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

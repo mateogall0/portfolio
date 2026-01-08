@@ -4,7 +4,7 @@ import { experience } from "@/data/experience";
 
 export default function Experience() {
   return (
-    <section className="w-full py-16 flex flex-col items-center justify-center">
+    <section id="experience" className="w-full py-16 flex flex-col items-center justify-center">
       <h2 className="text-2xl font-semibold mb-10">Experience</h2>
 
       <div className="relative">
