@@ -13,7 +13,7 @@ export default function Hero() {
         {/* Image */}
         <div className="flex-shrink-0">
           <img
-            src="/profile.jpg"
+            src="profile.jpg"
             alt="Mateo Gallo"
             className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-white"
           />
