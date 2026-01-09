@@ -13,7 +13,7 @@ export const experience: Experience[] = [
     id: "1",
     role: "Backend Developer",
     company: "Bit-A",
-    start: "2023",
+    start: "2025",
     end: "Present",
     description: "Designed, developed, deployed, and maintained backend services.",
     type: 1,

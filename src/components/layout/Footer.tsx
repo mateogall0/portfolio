@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4">
         {/* Copyright */}
         <p className="text-sm text-gray-400 flex-shrink-0">
-          © {new Date().getFullYear()} Mateo Gallo. All rights reserved.
+          © {new Date().getFullYear()} Mateo Gallo.
         </p>
 
         {/* Contact info / Social icons */}
